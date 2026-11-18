@@ -1,0 +1,70 @@
+# Shared label set for every repo in the aldra-systems org.
+# Apply with: node scripts/sync-labels.mjs (see docs/labels.md).
+# Flat format only: a list of entries with name, color (hex, no #) and description.
+
+# type (blue)
+- name: "type: feat"
+  color: "1d76db"
+  description: "New feature or improvement"
+- name: "type: fix"
+  color: "5319e7"
+  description: "Something is broken or behaves wrong"
+- name: "type: chore"
+  color: "9ec5f0"
+  description: "Maintenance, tooling, refactors"
+- name: "type: docs"
+  color: "c5def5"
+  description: "Documentation only"
+- name: "type: security"
+  color: "0b3d91"
+  description: "Security fix or hardening"
+
+# area (green)
+- name: "area: site"
+  color: "0e8a16"
+  description: "Public site and signup flow"
+- name: "area: emails"
+  color: "2ea44f"
+  description: "Email templates and campaigns"
+- name: "area: listmonk"
+  color: "5cb85c"
+  description: "Listmonk setup and integration"
+- name: "area: analytics"
+  color: "7bc96f"
+  description: "Analytics, consent and error tracking"
+- name: "area: infra"
+  color: "3f9b6b"
+  description: "Hosting, DNS and deployment"
+- name: "area: brand"
+  color: "a3d9a5"
+  description: "Brand identity and assets"
+- name: "area: ci"
+  color: "b7e4c7"
+  description: "CI, workflows and automation"
+
+# priority (amber to red)
+- name: "priority: p0"
+  color: "b60205"
+  description: "Urgent: fix now"
+- name: "priority: p1"
+  color: "d93f0b"
+  description: "Important: next up"
+- name: "priority: p2"
+  color: "f9b36b"
+  description: "Normal: when there is time"
+
+# status (purple)
+- name: "status: blocked"
+  color: "8957e5"
+  description: "Waiting on something external"
+- name: "status: needs-info"
+  color: "c9b6f2"
+  description: "More information needed from the reporter"
+
+# kept as is
+- name: "dependencies"
+  color: "0366d6"
+  description: "Dependency updates (Dependabot)"
+- name: "good first issue"
+  color: "7057ff"
+  description: "Good for newcomers"
